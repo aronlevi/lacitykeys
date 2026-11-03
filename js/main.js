@@ -2,7 +2,26 @@
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 function toggleMenu(btn){const nav=document.getElementById('navlinks');const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open))}
 document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('navlinks').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false')}));
-function submitInquiry(e){e.preventDefault();const val=id=>document.getElementById(id).value.trim();const subject='LA City Keys — Property inquiry: '+val('address');const body=['Name: '+val('name'),'Contact: '+val('contact'),'Property: '+val('address'),'Vacant units: '+val('units'),'Approx. rent: '+val('rent'),'Details: '+val('details')].join('\n');navigator.clipboard?.writeText(subject+'\n\n'+body).then(()=>alert('Inquiry copied. Please send it to LA City Keys via Instagram until direct email is connected.')).catch(()=>alert('Please contact @lacitykeys on Instagram to submit your inquiry.'));return false}
+async function submitInquiry(event){
+ event.preventDefault();
+ const form=event.currentTarget;
+ const button=form.querySelector('button[type="submit"]');
+ const status=document.getElementById('formStatus');
+ const previous=button.textContent;
+ button.disabled=true;button.textContent='Sending…';
+ status.style.display='block';status.textContent='Sending your inquiry…';status.style.color='';
+ try{
+  const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+  if(!response.ok)throw new Error('Submission failed');
+  form.reset();
+  status.textContent='Thank you! Your inquiry was sent successfully. We’ll be in touch.';
+  status.style.color='#28724d';
+ }catch(error){
+  status.textContent='Your message could not be sent. Please try again or email lacitykeys@gmail.com.';
+  status.style.color='#b44136';
+ }finally{button.disabled=false;button.textContent=previous}
+ return false;
+}
 
 async function loadProperties(){
  const el=document.getElementById('property-grid');if(!el)return;

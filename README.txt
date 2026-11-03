@@ -1,8 +1,6 @@
-LA City Keys — 1450 S Wooster photo and listing update
-
-Upload the contents of this ZIP to the ROOT of your existing GitHub repository, preserving folders.
-Overwrite css/style.css, js/main.js, data/properties.json and add images/wooster/*.webp.
-Do not delete your existing index.html, rentals.html, contact.html, CNAME, or images/city-keys-logo.png.
-
-Rental price and availability have not been confirmed; the listing says Contact for current rental pricing.
-The Hampton entry is preserved.
+LA City Keys Formspree contact update
+Upload index.html and contact.html to the repository ROOT.
+Upload js/main.js to the existing js/ folder (replace old main.js).
+Do not delete any other files, especially images, css, data, CNAME.
+Formspree endpoint: https://formspree.io/f/xrppovqv
+Verify your Formspree notification email and test the form after deployment.
