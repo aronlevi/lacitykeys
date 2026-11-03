@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1450-s-wooster",
+    "name": "1450 S Wooster",
+    "address": "1450 S Wooster St, Los Angeles, CA",
+    "status": "Details pending",
+    "price": null,
+    "description": "Photos, rental terms, and availability will be added once verified.",
+    "zillowUrl": null
+  },
+  {
+    "id": "hampton",
+    "name": "The Hampton",
+    "address": null,
+    "status": "Details pending",
+    "price": null,
+    "description": "Exact address, photos, and rental terms will be added once confirmed.",
+    "zillowUrl": null
+  }
+]
