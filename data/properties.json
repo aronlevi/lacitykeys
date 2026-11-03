@@ -3,10 +3,38 @@
     "id": "1450-s-wooster",
     "name": "1450 S Wooster",
     "address": "1450 S Wooster St, Los Angeles, CA",
-    "status": "Details pending",
+    "status": "Rental listing",
     "price": null,
-    "description": "Photos, rental terms, and availability will be added once verified.",
-    "zillowUrl": null
+    "description": "Charming 3-bedroom, 2-bathroom home in Pico-Robertson with original hardwood floors, renovated kitchen, architectural arches, abundant natural light, generous storage, and a shared outdoor yard.",
+    "zillowUrl": "https://www.zillow.com/homedetails/1450-S-Wooster-St-Los-Angeles-CA-90035/20491752_zpid/?view=public",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": "2 tandem spaces",
+    "neighborhood": "Pico-Robertson",
+    "images": [
+      "images/wooster/exterior-day.webp",
+      "images/wooster/living-room.webp",
+      "images/wooster/kitchen.webp",
+      "images/wooster/kitchen-detail.webp",
+      "images/wooster/french-doors.webp",
+      "images/wooster/living-area.webp",
+      "images/wooster/living-room-second.webp",
+      "images/wooster/exterior-twilight.webp"
+    ],
+    "highlights": [
+      "3 bedrooms · 2 bathrooms",
+      "Original hardwood floors",
+      "Renovated kitchen",
+      "Architectural arches and original details",
+      "Bright living spaces and generous closet space",
+      "Updated light fixtures and built-in storage",
+      "2 tandem parking spaces",
+      "Shared outdoor yard",
+      "No pets · No smoking"
+    ],
+    "fullDescription": "Welcome to this beautifully updated 3-bedroom, 2-bathroom home, offering a wonderful combination of classic character and modern comfort in the desirable Pico-Robertson neighborhood. Filled with natural light, this charming residence features original hardwood floors, beautiful architectural arches, a renovated kitchen, and spacious living areas. Thoughtful details throughout include original built-in storage, updated light fixtures, generous bedroom closets, and a lovely alcove off the living room. Conveniently located in Pico-Robertson, near shopping, dining, and neighborhood amenities. Schedule a tour today and discover everything this charming home has to offer!",
+    "yardNote": "The property includes two separately rented studio units located at the rear. The outdoor yard is a shared space for residents of all three units.",
+    "disclaimer": "Select photos have been virtually staged. The furniture shown in the listing photos is for staging purposes only. The home is offered unfurnished and will be delivered vacant unless otherwise agreed upon. Photos may not depict the exact residence available. Square footage is approximate. Rental rates, availability, concessions, and features are subject to change without notice. Prospective tenants are encouraged to verify all information independently. We proudly adhere to all Fair Housing laws and regulations."
   },
   {
     "id": "hampton",
